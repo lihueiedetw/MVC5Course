@@ -8,6 +8,8 @@ namespace MVC5Course.Controllers
 {
     public class HomeController : Controller
     {
+      
+
         public ActionResult Index()
         {
             return View();
@@ -16,7 +18,7 @@ namespace MVC5Course.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
+           
             return View();
         }
 
@@ -24,6 +26,12 @@ namespace MVC5Course.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Test()
+        {
+            ViewBag.Message = "Test page.";
             return View();
         }
     }
